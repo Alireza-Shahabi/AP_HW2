@@ -64,12 +64,12 @@ public class Main {
             }
         }
 
-        System.out.println("----- Order Summaries -----");
+        
         for (Order order : allOrders) {
             System.out.println(order.getOrderSummary());
         }
 
-        System.out.println("\n----- Employee Salaries -----");
+    
         for (Employee e : employees) {
             System.out.println(e.getInfo() + ", Salary: " + e.calculateSalary());
         }
@@ -82,7 +82,7 @@ public class Main {
         }
         System.out.println("\nMost Loyal Customer: " + mostLoyal.getInfo());
 
-        System.out.println("\n----- Menu -----");
+        
         for (Food f : foods)
             System.out.println(f.getDetails());
         for (Beverage b : beverages)
