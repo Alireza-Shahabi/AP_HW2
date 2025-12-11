@@ -78,6 +78,14 @@ public class UserService {
         return usersByCardNumber.get(cardNumber);
     }
 
+    public HashMap<String, User> getUsersByUsername() {
+        return usersByUsername;
+    }
+
+    public HashMap<String, User> getUsersByCardNumber() {
+        return usersByCardNumber;
+    }
+
     private boolean isValidPhoneNumber(String phoneNumber) {
         if (phoneNumber.length() != 11) return false;
         if (!phoneNumber.startsWith("09")) return false;
